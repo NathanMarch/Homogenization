@@ -17,3 +17,12 @@ The code features two implementations of the semi-analytical solution presented 
 
 If you use ``homogenization`` and/or ``homogenization_CD``, we would appreciate that you mention it in your work by citing the following paper:
 
+## Examples
+
+``homogenization`` and ``homogenization_CD``are best demonstrated with some examples.
+
+### Example A
+
+``homogenization`` can be used to compute the effective diffusivity matrix of any geometry that can be represented as an ``m`` by ``m`` grid of blocks
+
+The diffusivities are represented as an array in which the diffusivity in the ``(i,j)``th block is the ``(i,j)``th entry in the diffusivity array ``D``. For example, the following geometry
