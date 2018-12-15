@@ -27,4 +27,4 @@ If you use ``homogenization`` and/or ``homogenization_CD``, we would appreciate 
 
 The diffusivities are represented as an array in which the diffusivity in the ``(i,j)``th block is the ``(i,j)``th entry in the diffusivity array ``D``. For example, the following geometry:
 
-<figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/Example_A.pdf"></figure>
+<figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/Example_A.jpg"></figure>
