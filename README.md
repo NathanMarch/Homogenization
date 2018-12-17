@@ -19,7 +19,7 @@ If you use ``homogenization`` and/or ``homogenization_CD``, we would appreciate 
 
 ## Examples
 
-``homogenization`` and ``homogenization_CD``are best demonstrated with some examples.
+``homogenization`` and ``homogenization_CD``are best demonstrated with some examples. Examples A-C consist of two materials in which dark grey blocks have diffusivity ``0.1`` and light grey blocks have diffusivity ``1``.
 
 ### Example A
 
@@ -31,7 +31,7 @@ The diffusivities are represented as an array in which the diffusivity in the ``
 
 can be represented as the matrix:
 
-``D = [1 0.1 0.1 0.1; 1 0.1 0.1 0.1; 1 1 0.1 1; 1 1 0.1 1]``
+``D = [1 0.1 0.1 0.1; 1 0.1 0.1 0.1; 1 1 0.1 1; 1 1 0.1 1]``.
 
 Computing ``Deff = homogenization(D)`` yields the effective diffusivity:
 
