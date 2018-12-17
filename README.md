@@ -81,7 +81,7 @@ and compute the effective diffusivity ``Deff = homogenization(D);``
 
 yielding:
 
-``Deff = [0.3245 0.0161; 0.0161 0.2914]``
+``Deff = [0.3741 -0.0194; -0.0194 0.2532]``
 
 ### Example D
 
