@@ -69,7 +69,7 @@ We use the following ``10`` by ``10`` geometry:
 
 and compute the effective diffusivity as:
 
-``Deff = [0.3014 -0.0194; -0.0194 0.3376]``
+``Deff = [0.2577 -0.0159; -0.0159 0.395]``
 
 ### Example C
 
@@ -108,7 +108,7 @@ N = 29; % Number of terms used in summations
 options = struct('Nx',Nx','Ny',Ny,'N',N);
 ```
 
-and compute the effective diffusivity ``Deff = homogenization_CD(D,x0,xn,x,y0,ym,y,options);;``
+and compute the effective diffusivity ``Deff = homogenization_CD(D,x0,xn,x,y0,ym,y,options);``
 
 yielding:
 
