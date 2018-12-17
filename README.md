@@ -17,6 +17,8 @@ The code features two implementations of the semi-analytical solution presented 
 
 If you use ``homogenization`` and/or ``homogenization_CD``, we would appreciate that you mention it in your work by citing the following paper:
 
+March, Carr and Turner (2018).
+
 ## Examples
 
 ``homogenization`` and ``homogenization_CD``are best demonstrated with some examples. Examples A-C consist of two materials in which dark grey blocks have diffusivity ``0.1`` and light grey blocks have diffusivity ``1``.
