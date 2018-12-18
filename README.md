@@ -21,7 +21,7 @@ https://arxiv.org/abs/1812.06680
 
 ## Examples
 
-``homogenization`` and ``homogenization_CD``are best demonstrated with some examples. Examples A-C consist of two materials in which dark grey blocks have diffusivity ``0.1`` and light grey blocks have diffusivity ``1``.
+``homogenization`` and ``homogenization_CD``are best demonstrated with some examples. Examples A-C consist of two materials in which dark grey blocks have diffusivity ``0.1`` and light grey blocks have diffusivity ``1``. All examples can be implemented by running the relevant script file. For examples B and C you will also need to ensure that you have Example_B.mat and Example_C.mat respectively in order to load the diffusivity matrices.
 
 ### Example A
 
