@@ -15,8 +15,8 @@ The code features two implementations of the semi-analytical solution presented 
 
 If you use ``homogenization`` and/or ``homogenization_CD``, we would appreciate that you mention it in your work by citing the following paper:
 
-Nathan G. March, Elliot J. Carr , and Ian W. Turner,
-A fast semi-analytical homogenization method for block heterogeneous media, Submitted to Journal of Computational Physics.
+Nathan G. March, Elliot J. Carr, and Ian W. Turner,
+A fast semi-analytical homogenization method for block heterogeneous media, Submitted.
 https://arxiv.org/abs/1812.06680
 
 ## Examples
