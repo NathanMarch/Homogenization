@@ -17,10 +17,9 @@ function Deff = homogenization_CD(D,x0,xn,x,y0,ym,y,varargin)
 
 %% If you use this code please city the following publication:
 
-% Nathan G. March, Elliot J. Carr , and Ian W. Turner,
+% Nathan G. March, Elliot J. Carr, and Ian W. Turner,
 % A fast semi-analytical homogenization method for block heterogeneous
-% media, Submitted to Journal of Computational Physics, 
-% https://arxiv.org/abs/1812.06680
+% media, Submitted. https://arxiv.org/abs/1812.06680
 
 
 % -------------------------------------------------------------------------
