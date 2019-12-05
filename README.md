@@ -156,7 +156,7 @@ Deff = homogenization(D,options);`
 
 yielding:
 
-``Deff =  [0.4694 -0.0199; -0.0199 0.4445]``.
+``Deff =  [0.4689 -0.0194; -0.0194 0.4362]``.
 
 ## Pixelation Loop
 We can loop through different levels of pixelation by first finding the factors of ``m``:
