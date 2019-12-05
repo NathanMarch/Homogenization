@@ -138,33 +138,39 @@ D(~D) = 0.1; % set values of diffusivity
 
 Now that the image has been imported and converted to an array of diffusivity values, we can choose a pixellation parameter, r, that determines the size of the geometry that will be homogenized.
 
-``r = 16; % pixellation parameter (number of rows of blocks in pixellated image). 
-% Smaller values of r correspond to more pixellated geometeries``
+```r = 16; % pixellation parameter (number of rows of blocks in pixellated image). 
+% Smaller values of r correspond to more pixellated geometeries```
 
 This means that the pixellated geometry being homogenized will be of size 16 by 16, whereas the original image was 512 by 512. Each 32 by 32 grid of pixels in the image becomes one pixel in the pixellated image. This is done by averaging the values of the 1024 pixels in the 32 by 32 grid and rounding it to the closer of 0 or 1.
 
-``for l = 1:r
+```
+for l = 1:r
     for j = 1:r
         D_average(l,j) = mean(reshape(D((l-1)*k+1:l*k,(j-1)*k+1:j*k),[k^2,1]));
     end
 end
+```
 
 D_average = round(D_average); % round average diffusivity to 0 or 1
 D_average(~D_average) = 0.1; % set values of diffusivity``
 
 We can then plot the pixellated geometry:
 
-``figure;
+```
+figure;
 pcolor(D_average(end:-1:1,:)); % plot geometry
 colormap(smap)
-shading flat``
+shading flat
+```
 
 <figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/geometry_16.pdf" width="455"></figure>
 
 The effective diffusivity can then be calculated:
 
-``options.Nx = 4; % choose number of asbcissas used in quadrature rule
-Deff = homogenization(D,options);``
+```
+options.Nx = 4; % choose number of asbcissas used in quadrature rule
+Deff = homogenization(D,options);`
+``
 
 yielding:
 
