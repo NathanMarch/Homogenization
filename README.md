@@ -145,7 +145,7 @@ r = 16; % pixellation parameter (number of rows of blocks in pixellated image).
 
 This means that the pixelated geometry being homogenized will be of size 16 by 16, whereas the original image was 512 by 512. Each 32 by 32 grid of pixels in the image becomes one pixel in the pixelated image. This is done by averaging the values of the 1024 pixels in the 32 by 32 grid and rounding this average value to the closer of 0.1 or 1. This geometry is then plotted to give the pixelated image:
 
-<figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/geometry_16.pdf" width="455"></figure>
+<figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/geometry_16.png" width="455"></figure>
 
 The effective diffusivity can then be calculated:
 
@@ -158,19 +158,19 @@ yielding:
 
 ``Deff =  [0.4694 -0.0199; -0.0199 0.4445]``.
 
-## Pixellation Loop
-We can loop through different levels of pixellation by first finding the factors of ``m``:
+## Pixelation Loop
+We can loop through different levels of pixelation by first finding the factors of ``m``:
 ```
 values = 1:ceil(m/2);
 factors = [values(rem(m,values)==0) m];
 ```
 
 Any element of the array ``factors`` is an acceptable value for ``k`` or ``r``, so we can loop through a subset of these values:
-```k_values = factors(4:6); % choose subset of factors to be used for pixellation
+```k_values = factors(4:6); % choose subset of factors to be used for pixelation
 Nk_values = length(k_values);`
 ```
 
-We can then loop through the values of ``k`` to generated different pixellated geometries:
+We can then loop through the values of ``k`` to generated different pixelated geometries:
 <figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/geometry_64.png" width="455"></figure>
 <figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/geometry_32.png" width="455"></figure>
 <figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/geometry_16.png" width="455"></figure>
