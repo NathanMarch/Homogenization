@@ -171,9 +171,9 @@ Nk_values = length(k_values);`
 ```
 
 We can then loop through the values of ``k`` to generated different pixellated geometries:
-<figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/geometry_16.png" width="455"></figure>
-<figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/geometry_32.png" width="455"></figure>
 <figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/geometry_64.png" width="455"></figure>
+<figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/geometry_32.png" width="455"></figure>
+<figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/geometry_16.png" width="455"></figure>
 
 
 
