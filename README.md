@@ -123,7 +123,7 @@ Two-scale computational modelling of water flow in unsaturated soils containing
 irregular-shaped inclusions., International Journal for Numerical Methods in Engineering, 98(3), pp.
 157-173.
 
-<figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/unit_cell.png" width="455"></figure>
+<figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/unit_cell_cropped.png" width="455"></figure>
 
 We can import this image into MATLAB and convert the image into an array of diffusivity values. The original image is 524 by 524, so we will remove some of the outer pixels to reduce it to a 512 by 512 image.
 
