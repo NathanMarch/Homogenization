@@ -127,11 +127,14 @@ irregular-shaped inclusions., International Journal for Numerical Methods in Eng
 
 We can import this image into MATLAB and convert the image into an array of diffusivity values. The original image is 524 by 524, so we will remove some of the outer pixels to reduce it to a 512 by 512 image.
 
-``I = imread(image); A = im2bw(I,graythresh(I)); % convert image to array
+
+```
+I = imread(image); A = im2bw(I,graythresh(I)); % convert image to array
 D = double(A); % convert array to diffusivity array
 D = D(7:518,7:518); % remove entries in array corresponding to borders of image
 D(~D) = 0.1; % set values of diffusivity
-[m,n] = size(D); % calculate size of diffusivity array``
+[m,n] = size(D); % calculate size of diffusivity array
+```
 
 Now that the image has been imported and converted to an array of diffusivity values, we can choose a pixellation parameter, r, that determines the size of the geometry that will be homogenized.
 
