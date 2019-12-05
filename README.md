@@ -168,12 +168,12 @@ factors = [values(rem(m,values)==0) m];
 Any element of the array ``factors`` is an acceptable value for ``k`` or ``r``, so we can loop through a subset of these values:
 ```k_values = factors(4:6); % choose subset of factors to be used for pixellation
 Nk_values = length(k_values);`
-``
+```
 
 We can then loop through the values of ``k`` to generated different pixellated geometries:
-<figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/geometry_4.png" width="455"></figure>
-<figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/geometry_8.png" width="455"></figure>
 <figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/geometry_16.png" width="455"></figure>
+<figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/geometry_32.png" width="455"></figure>
+<figure><img src="https://github.com/NathanMarch/Homogenization/blob/master/Figures/geometry_64.png" width="455"></figure>
 
 
 
